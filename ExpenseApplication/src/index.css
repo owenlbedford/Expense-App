@@ -1,0 +1,420 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'monseratt', sans-serif;
+}
+
+.app, .login{
+  background-image: url('./assets/admin.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+
+.app.admin{
+  background-image: url('./assets/admin.jpg');
+}
+
+main{
+  min-height: 100vh;
+  background-image: linear-gradient (to bottom, rgba(0,0,0,0,2), rgba(0,0,0,0.75));
+  padding: 1.5625em;
+}
+
+.search-box, .select-use{
+  width: 100%;
+  margin: 0 0 4.6875em;
+}
+
+.search-button{
+  position: relative;
+  left:5em;
+}
+
+.select{
+  position: relative;
+  left: 3em;
+  height:5em;
+}
+
+.search-box .search-bar, .select-use{
+  display: block;
+  width: 100%;
+  padding: 0.9375em;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 0em 0em 1em 1em;
+  margin-top: -1.3em;
+
+  box-shadow: 0em 0.3125em rgba(0,0,0,0.2);
+  color: #313131;
+  font-size: 1.25em;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus{
+  background-color: rgba(255,255,255,0.5);
+}
+
+.location-box .location{
+  color: #FFF;
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 0.1875em 0.1875em rgba(50, 50, 70, 0.5);
+}
+
+.location-box{
+  position: relative;
+  top: -4em;
+}
+
+.location-box .date{
+  color: #FFF;
+  font-size: 1.25em;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 0.125em 0.125em rgba(50, 50, 70, 0.5);
+}
+
+.select-use .search-button{
+  position: relative;
+  left: 0.4em;
+}
+
+.search-button{
+  border-radius: 1em 1em 1em 1em;
+  border: none;
+  color: white;
+  padding: 0.5em 0.3em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.75em;
+  margin: 0.2em 0.125em;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 0.125em solid #008CBA;
+
+}
+
+.search-button:hover{
+  background-color: #008CBA;
+  color: white;
+}
+
+.select{
+  background-color: #008CBA;
+  color: white;
+  padding: 0;
+  font-size: 0.75em;
+  border: none;
+  cursor: pointer;
+  height: 2em;
+}
+
+.select-use .select{
+  left: -0.3em;
+}
+
+.select-use .login-button{
+  position: relative;
+  left: 12em;
+}
+
+.title{
+  color: white;
+  font-weight: bold;
+}
+
+.login-button, .login-button-LM{
+  border-radius: 1em 1em 1em 1em;
+  border: none;
+  color: white;
+  padding: 0.5em 0.3em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.75em;
+  margin: 0.2em 0.125em;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 0.125em solid #008CBA;
+}
+
+.login-button-LM{
+  position: relative;
+  left: 9.4em;
+}
+
+.login-button:hover, .login-button-LM:hover{
+  background-color: #008CBA;
+  color: white;
+}
+
+
+.overview{
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 1em 1em 1em 1em;
+  margin-top: -1.3em;
+  margin-right: 60%;
+
+  box-shadow: 0em 0.3125em rgba(0,0,0,0.2);
+  color: #313131;
+  font-size: 1.25em;
+
+  transition: 0.4s ease;
+  position: relative;
+  top: -1em;
+
+  text-align: center;
+}
+
+.overview2{
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 1em 1em 1em 1em;
+  margin-top: -1.3em;
+  margin-right: 60%;
+
+  box-shadow: 0em 0.3125em rgba(0,0,0,0.2);
+  color: #313131;
+  font-size: 1.25em;
+
+  transition: 0.4s ease;
+  position: relative;
+
+  text-align: center;
+  left: 55%;
+  top: -6em;
+}
+
+.overview3{
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 1em 1em 1em 1em;
+  margin-top: -1.3em;
+  margin-right: 60%;
+
+  box-shadow: 0em 0.3125em rgba(0,0,0,0.2);
+  color: #313131;
+  font-size: 1.25em;
+
+  transition: 0.4s ease;
+  position: relative;
+  top: -1em;
+
+  text-align: center;
+}
+
+.overview4{
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 1em 1em 1em 1em;
+  margin-top: -1.3em;
+  margin-right: 60%;
+
+  box-shadow: 0em 0.3125em rgba(0,0,0,0.2);
+  color: #313131;
+  font-size: 1.25em;
+
+  transition: 0.4s ease;
+  position: relative;
+
+  text-align: center;
+  left: 55%;
+  top: -6em;
+}
+
+.overview:hover, .overview2:hover, .overview3:hover, .overview4:hover{
+  color: white;
+}
+
+.footer{
+  position: relative;
+  text-align: center;
+  margin-top: -5.5em;
+}
+
+.footerlogin{
+  position: relative;
+  text-align: center;
+  margin-top: -1.2em;
+}
+
+.footer-text:hover, .footerlogin-text:hover{
+  color: purple;
+}
+
+/* login.js css */
+
+.login-form{
+  background-color: rgba(255,255,255,0.5);
+  text-align: center;
+  position: relative;
+  padding: 1em;
+  margin-left:5em;
+  margin-right: 5em;
+  margin-top: 6em;
+  border-radius: 1em 1em 1em 1em;
+}
+
+.entry{
+  margin: 0.5em;
+  padding: 0.25em;
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.loginbutton{
+  border-radius: 1em 1em 1em 1em;
+  border: none;
+  color: white;
+  padding: 0.5em 0.3em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 0.2em 0.125em;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 0.125em solid #008CBA;
+}
+
+.loginbutton:hover{
+  background-color: #008CBA;
+  color: white;
+}
+
+.logo{
+  height: 50%;
+  width: 50%;
+  position: relative;
+  margin-top: 7em;
+  margin-bottom: -7em;
+  margin-left: 7em;
+}
+
+.logoForm{
+  height:50%;
+  width: 50%;
+  filter:invert(50%);
+  margin-left: 25%;
+  position: relative;
+}
+
+.formpage{
+  background-color: aliceblue;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 2%;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.form-title, .center{
+  text-align: center;
+}
+
+.form-title, fieldset{
+  background-color: rgb(164, 194, 249);
+  color: #FFF;
+  border-radius: 10px;
+  padding:4%;
+  margin: 2%;
+  border: none;
+}
+
+.form-title{
+  margin-top:0%;
+}
+
+.submitbutton{
+  padding:3%;
+  padding-left: 9%;
+  padding-right:9%;
+  margin-left: 8px;
+  background-color: rgb(164, 194, 249);
+  color: #FFF;
+  border-radius: 10px;
+  border:none;
+  font-size: medium;
+}
+
+.submitbutton:hover{
+  background: rgb(164, 194, 249);
+  color: #fff;
+  box-shadow: 0 0 5px rgb(164, 194, 249),
+              0 0 25px rgb(164, 194, 249),
+              0 0 50px rgb(164, 194, 249)
+}
+
+.claim{
+  width: 5em;
+}
+
+.currentexpenses{
+  width: 5em;
+  height: 5em;
+}
+
+.chimg{
+  width: 5em;
+  height: 5em;
+}
+
+.reportsimg{
+  width: 5em;
+  height: 5em;
+}
+
+.notif{
+  width: 4em;
+  height: 4em;
+  position: relative;
+  left: -9em;
+}
+
+.setting{
+  width: 4em;
+  height: 4em;
+  position: relative;
+  left: 7.4em;
+}
